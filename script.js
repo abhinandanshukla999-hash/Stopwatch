@@ -1,7 +1,27 @@
+
+let dis=document.querySelector('#stopwatch');
 document.querySelector('#start').addEventListener('click',startTimer);
 document.querySelector('#reset').addEventListener('click',resetTimer);
 document.querySelector('#pause').addEventListener('click',stopTimer);
 
+document.querySelector('#saffron').addEventListener('click',  ()=>{
+    document.body.style.backgroundColor = "rgb(255, 152, 87)";
+    document.body.container.style.backgroundColor=Red;
+});
+
+document.querySelector('#black').addEventListener('click',  ()=>{
+    document.body.style.backgroundColor = "rgb(255, 242, 104)";
+    document.body.style.color="white";
+});
+
+document.querySelector('#darkblue').addEventListener('click',  ()=>{
+    document.body.style.backgroundColor = "rgb(128, 118, 244)";
+    document.body.style.color="black";
+});
+
+document.querySelector('#white').addEventListener('click',  ()=>{
+    document.body.style.backgroundColor = "rgb(245, 244, 245)";
+});
 
 let ms=0;
 let sec=0;
@@ -39,6 +59,12 @@ function startTimer(){
 function stopTimer(){
     clearInterval(timer);
     timer=null;
+
+    const li=document.createElement('li');
+    li.textContent=dis.textContent;
+    document.getElementById('#list').appendChild(li);
+    
+    
 }
 function resetTimer(){
    clearInterval(timer);
