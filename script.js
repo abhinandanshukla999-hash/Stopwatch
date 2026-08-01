@@ -1,3 +1,8 @@
+window.addEventListener("load", () => {
+    console.log('loading the page')
+    document.querySelector(".loader").style.display = "none";
+
+});
 
 let dis=document.querySelector('#stopwatch');
 document.querySelector('#start').addEventListener('click',startTimer);
@@ -5,8 +10,8 @@ document.querySelector('#reset').addEventListener('click',resetTimer);
 document.querySelector('#pause').addEventListener('click',stopTimer);
 
 document.querySelector('#saffron').addEventListener('click',  ()=>{
-    document.body.style.backgroundColor = "rgb(255, 152, 87)";
-    document.body.container.style.backgroundColor=Red;
+    document.body.style.backgroundColor = "rgb(255, 104, 11)";
+    
 });
 
 document.querySelector('#black').addEventListener('click',  ()=>{
