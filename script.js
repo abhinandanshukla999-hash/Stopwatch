@@ -19,6 +19,11 @@ document.querySelector('#black').addEventListener('click',  ()=>{
     document.body.style.color="white";
 });
 
+document.querySelector('#green').addEventListener('click',  ()=>{
+    document.body.style.backgroundColor = "rgb(25, 221, 129)";
+    document.body.style.color="white";
+});
+
 document.querySelector('#darkblue').addEventListener('click',  ()=>{
     document.body.style.backgroundColor = "rgb(128, 118, 244)";
     document.body.style.color="black";
